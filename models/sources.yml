@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+    - name: raw
+      #For bigquery:
+      database: eighth-parity-407109
+      schema: dbt_huythai
+
+      tables:
+        - name: post-test
+        - name: cmt-test
