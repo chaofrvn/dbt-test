@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: prod_posts
+  - name: post
     description: Cleansed table which contains posts from subreddits of data
     columns:
       - name: author_post
@@ -61,7 +61,7 @@ models:
         tests:
           - not_null
 
-  - name: prod_comments
+  - name: cmt 
     description: Cleansed table of comments from posts in data subreddits
     columns:
       - name: comments_post_url
