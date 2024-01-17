@@ -27,7 +27,7 @@ with
             stickied,
             upvote_ratio
 
-        from {{ source("raw", "post-test") }}
+        from {{ source("raw", "reddit-prj3") }}
     )
 
 select
@@ -52,4 +52,4 @@ select
     stickied as post_stickied,
     cast(upvote_ratio as float64) as post_upvote_ratio
 from raw_posts
-where created_at >= timestamp('2023-01-18 00:00:00')
+where created_at >= timestamp('2023-01-01 00:00:00') and post_text <> ''

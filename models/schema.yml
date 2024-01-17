@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: prod_posts
-    description: Cleansed table which contains posts from subreddits of paranormal stuff.
+    description: Cleansed table which contains posts from subreddits of data
     columns:
       - name: author_post
         tests:
@@ -62,7 +62,7 @@ models:
           - not_null
 
   - name: prod_comments
-    description: Cleansed table of comments from posts in paranormal subreddits
+    description: Cleansed table of comments from posts in data subreddits
     columns:
       - name: comments_post_url
         tests:

@@ -4,8 +4,8 @@ sources:
     - name: raw
       #For bigquery:
       database: eighth-parity-407109
-      schema: dbt_huythai
+      schema: huythai_prj3
 
       tables:
-        - name: post-test
-        - name: cmt-test
+        - name: reddit-prj3
+        - name: reddit-cmt-prj3

@@ -18,7 +18,7 @@ with
             post_id,
             link_comment,
             comment_score
-        from {{ source("raw", "cmt-test") }}
+        from {{ source("raw", "reddit-cmt-prj3") }}
     )
 
 select
@@ -33,6 +33,6 @@ select
     edited as comment_edited,
     is_author_submitter,
     post_id as comments_post_id,
-    link_comment,
+    concat('https://www.reddit.com',link_comment) as link_comment,
     comment_score
 from raw_comments
